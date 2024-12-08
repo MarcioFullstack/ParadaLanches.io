@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Garante que o body ocupe toda a altura da janela */
+    background-image: url('img/fundo9.jpg'); /* Insira o caminho da sua imagem de fundo */
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Efeito de paralaxe */
+    color: #2d1919; /* Cor do texto */
+}
+
+header {
+    background: rgba(0, 0, 0, 0.394); /* Fundo semi-transparente */
+    color:	#ffd900f6;
+    padding: 20px;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+main {
+    background-color: #7a6e34c4;
+    display: flex;
+    padding: 20px;
+    flex-wrap: wrap; /* Permite que os itens se movam para a próxima linha em telas menores */
+    flex: 1; /* Permite que o main ocupe o espaço restante */
+}
+
+.menu, .order {
+    background: rgba(164, 143, 143, 0.273);
+    border-radius: 5px;
+    padding: 10px;
+    margin-right: 10px;
+    flex: 1;
+    min-width: 300px; /* Define uma largura mínima para os itens */
+}
+
+.invoice {
+    text-align: center; /* Centraliza o texto dentro do aside */
+    background: rgba(236, 248, 7, 0.262); /* Fundo do cupom */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    margin: 20px; /* Margem externa para espaçamento */
+}
+
+footer {
+    text-align: center; /* Centraliza o conteúdo do footer */
+}
+
+.social-icons {
+    display: inline-block; /* Permite que o container dos ícones seja centralizado */
+}
+
+.social-icons a {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    text-decoration: none; /* Remove o sublinhado */
+    color: #f3f3f3; /* Cor do texto */
+    font-size: 24px; /* Aumenta o tamanho dos ícones */
+    transition: color 0.3s; /* Transição suave para a mudança de cor */
+}
+
+.social-icons a:hover {
+    color: #4CAF50; /* Cor ao passar o mouse (exemplo: verde) */
+}
+
+.social-icons a i {
+    font-size: inherit; /* Faz com que o ícone herde o tamanho do link */
+}
+
+p {
+    color: rgb(235, 209, 209);
+    display: flex; /* Ativa o Flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    padding: 10px; /* Remove o padding */
+    height: 10px;
+}
+
+
+.h2 {
+    justify-content: center;
+    padding: 0%;
+    align-items: center;
+}

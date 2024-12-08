@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parada Lanches</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <img src="img/logo.png" alt="Logo da Marmitaria Delícias" class="logo">
+        <h1>Parada Lanches</h1>
+    </header>
+
+    <main>
+        <section class="menu">
+            <h2>Cardápio Hamburgueres</h2>
+            <ul>
+                <li>
+                    <h3>Hamburguer (Misto) - R$ 10,00</h3>
+                    <h4>(Queijo + Presunto + tomate + alface)</h4>
+                    <button onclick="addToOrder('Hamburguer Misto', 10)">Adicionar ao Pedido</button>
+                </li>
+                <li>
+                    <h3>Hamburguer (BAURU) - R$ 18,00</h3>
+                    <h4>(Queijo + Carne Hamburguer + Ovos + Presunto + queijo + Alface + Tomate)</h4>
+                    <button onclick="addToOrder('Hamburguer BAURU', 18)">Adicionar ao Pedido</button>
+                </li>
+                <li>
+                    <h3>Salada de Verão - R$ 8,00</h3>
+                    <button onclick="addToOrder('Salada de Verão', 8)">Adicionar ao Pedido</button>
+                </li>
+                <li>
+                    <h3>Macarrão à Bolonhesa - R$ 15,00</h3>
+                    <button onclick="addToOrder('Macarrão à Bolonhesa', 15)">Adicionar ao Pedido</button>
+                </li>
+                <li>
+                    <h3>Sobremesa: Pudim - R$ 6,00</h3>
+                    <button onclick="addToOrder('Pudim', 6)">Adicionar ao Pedido</button>
+                </li>
+            </ul>
+        </section>
+
+        <section class="order">
+            <h2>Meus Pedidos</h2>
+            <ul id="orderList"></ul>
+            <button onclick="clearOrder()">Limpar Pedido</button>
+        </section>
+
+        <aside class="invoice">
+            <h2>CUPOM</h2>
+            <h4>NÃO CUPOM FISCAL</h4>
+            <ul id="invoiceList"></ul>
+            <p>Total: <span id="totalPrice">R$ 0,00</span></p>
+            <input type="text" id="clientName" placeholder="Nome do Cliente" />
+            <button id="sendOrder" onclick="sendOrder()">Enviar Pedido</button>
+        </aside>
+    </main>
+    <footer>
+        <div class="social-icons">
+            <a href="https://wa.me/558598222118" target="_blank" aria-label="WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+            <a href="https://www.instagram.com/your-profile" target="_blank" aria-label="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.facebook.com/your-page" target="_blank" aria-label="Facebook">
+                <i class="fab fa-facebook"></i>
+            </a>
+        </div>
+        <p>&copy; 2023 Parada Lanche. Todos os direitos reservados.</p>
+    </footer>
+  
+
+    <script src="script.js"></script>
